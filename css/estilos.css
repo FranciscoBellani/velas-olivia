@@ -9,7 +9,6 @@ body{
     background-color: #fff;
 }
 /* estilo del header*/
-
 .span-logo{
     margin-top: 10px;
     text-transform: uppercase;
@@ -20,8 +19,7 @@ body{
 .nav-item, li {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    line-height: 1.2;    
-   
+    line-height: 1.2;       
 }
 .slider {
     width: 100%;
@@ -75,13 +73,11 @@ main h4 {
     color: #777777;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    letter-spacing: .1em;
-    
+    letter-spacing: .1em;    
 }
 main p {
     color: #777777;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;    
 }
 hr.solid {
     border-top: 2px solid #bbb;
@@ -126,7 +122,9 @@ hr.solid {
     opacity: 1;
     right: 0;
   }
-
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: #d0af8a;
+}
 /* estilos del footer*/
 footer{
     display: flex;
@@ -155,3 +153,6 @@ footer h5 {
     font-size: 15px;
 }
 
+@media screen and (min-width:480px) {
+  
+}
