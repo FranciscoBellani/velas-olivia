@@ -62,6 +62,7 @@ main h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: .1em;
+  margin-top: 10px;
 }
 
 main p {
@@ -72,6 +73,10 @@ main p {
 
 main button {
   align-items: center;
+}
+
+main .imagen {
+  border-radius: 10px;
 }
 
 .button {
@@ -157,15 +162,20 @@ footer h5 {
 
   main {
     display: grid;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 10px;   
     grid-template-areas:      
-      "h3 h3" 
-      "h2 h2" 
-      "solid solid"
-      "imagen h4 "
-      "imagen p" 
-      "imagen p-dos" 
-      "imagen button"
+      "h3 h3 h3" 
+      "h2 h2 h2" 
+      "solid solid solid"
+      "imagen h4 h4 "
+      "imagen p p" 
+      "imagen p-dos p-dos" 
+      "imagen button button"
+      "h3-quienesomos h3-quienesomos h3-quienesomos"
+      "solid-quienessomos solid-quienessomos solid-quienessomos"      
+      "h3i1 h3i2 h3i3"
+      "imagen1 imagen2 imagen3"
+      "p-tres p-cuatro p-cinco"
     ;
   }
   main h3 {
@@ -182,9 +192,9 @@ footer h5 {
     margin-left: 0.5em;
     margin-top: 20px;
   }
-
   main .imagen {
     grid-area: imagen;
+    margin-right: 10px;
   }
 
   main p {
@@ -207,5 +217,53 @@ footer h5 {
     margin: auto;
     padding-bottom: 10px;
     
+  }
+  main .h3i1{
+    grid-area: h3i1;  
+    
+  }
+  main .h3i2{
+    grid-area: h3i2;
+  }
+  main .h3i3{
+    grid-area: h3i3;
+  }
+  main .imagen1{
+    grid-area: imagen1;
+    margin: auto;
+  }
+  main .imagen2{
+    grid-area: imagen2;
+    margin: auto;
+  }
+  main .imagen3{
+    grid-area: imagen3;
+    margin: auto;
+  }
+  main .p-tres{
+    grid-area: p-tres;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    }
+  main .p-cuatro{
+    grid-area: p-cuatro;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  main .p-cinco{
+    grid-area: p-cinco;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  main .h3-quienesomos{
+    grid-area: h3-quienesomos;
+  }
+  main .solid-quienessomos {
+    grid-area: solid-quienessomos;
+    width: 50%;
+    margin: auto;
   }
 }
