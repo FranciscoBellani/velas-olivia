@@ -25,7 +25,9 @@ li {
   font-size: 13px;
   line-height: 1.2;
 }
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
   color: #d0af8a;
 }
 
@@ -79,7 +81,7 @@ main .imagen {
   border-radius: 10px;
 }
 
-.button {
+.button, .ser-button {
   display: inline-block;
   border-radius: 4px;
   background-color: #d0af8a;
@@ -94,14 +96,14 @@ main .imagen {
   margin: 5px;
 }
 
-.button span {
+.button span, .ser-button span{
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.button span:after, .ser-button span:after{
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -110,11 +112,11 @@ main .imagen {
   transition: 0.5s;
 }
 
-.button:hover span {
+.button:hover span, .ser-button:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.button:hover span:after, .ser-button:hover span::after {
   opacity: 1;
   right: 0;
 }
@@ -162,36 +164,44 @@ footer h5 {
 
   main {
     display: grid;
-    padding: 10px 0 0 10px;   
-    grid-template-areas:      
-      "h3 h3 h3" 
-      "h2 h2 h2" 
+    padding: 10px 0 0 10px;
+    grid-template-areas:
+      "h3 h3 h3"
+      "h2 h2 h2"
       "solid solid solid"
       "imagen h4 h4 "
-      "imagen p p" 
-      "imagen p-dos p-dos" 
+      "imagen p p"
+      "imagen p-dos p-dos"
       "imagen button button"
       "h3-quienesomos h3-quienesomos h3-quienesomos"
-      "solid-quienessomos solid-quienessomos solid-quienessomos"      
+      "solid-quienessomos solid-quienessomos solid-quienessomos"
       "h3i1 h3i2 h3i3"
       "imagen1 imagen2 imagen3"
       "p-tres p-cuatro p-cinco"
+      "solid-servicios solid-servicios solid-servicios"
+      "serv-imagen-dos ser-h4 ser-h4"
+      "serv-imagen-dos ser-p-tres ser-p-tres"
+      "serv-imagen-dos ser-p-cuatro ser-p-cuatro"
+      "serv-imagen-dos ser-button ser-button"
     ;
   }
+
   main h3 {
     grid-area: h3;
   }
 
   main h2 {
     grid-area: h2;
-    
+
   }
+
   main h4 {
     grid-area: h4;
     text-align: left;
     margin-left: 0.5em;
     margin-top: 20px;
   }
+
   main .imagen {
     grid-area: imagen;
     margin-right: 10px;
@@ -201,6 +211,7 @@ footer h5 {
     grid-area: p;
     text-align: left;
   }
+
   main .p-dos {
     grid-area: p-dos;
     text-align: left;
@@ -210,60 +221,160 @@ footer h5 {
     grid-area: button;
     margin-left: 0.8em;
   }
+
   main .solid {
     grid-area: solid;
     border-top: 2px solid #bbb;
-    width:40%;
+    width: 40%;
     margin: auto;
     padding-bottom: 10px;
-    
+
   }
-  main .h3i1{
-    grid-area: h3i1;  
-    
+
+  main .h3i1 {
+    grid-area: h3i1;
+
   }
-  main .h3i2{
+
+  main .h3i2 {
     grid-area: h3i2;
   }
-  main .h3i3{
+
+  main .h3i3 {
     grid-area: h3i3;
   }
-  main .imagen1{
+
+  main .imagen1 {
     grid-area: imagen1;
     margin: auto;
   }
-  main .imagen2{
+
+  main .imagen2 {
     grid-area: imagen2;
     margin: auto;
   }
-  main .imagen3{
+
+  main .imagen3 {
     grid-area: imagen3;
     margin: auto;
   }
-  main .p-tres{
+
+  main .p-tres {
     grid-area: p-tres;
     width: 60%;
     margin: auto;
     text-align: center;
-    }
-  main .p-cuatro{
+  }
+
+  main .p-cuatro {
     grid-area: p-cuatro;
     width: 60%;
     margin: auto;
     text-align: center;
   }
-  main .p-cinco{
+
+  main .p-cinco {
     grid-area: p-cinco;
     width: 60%;
     margin: auto;
     text-align: center;
   }
-  main .h3-quienesomos{
+
+  main .h3-quienesomos {
     grid-area: h3-quienesomos;
   }
+
   main .solid-quienessomos {
     grid-area: solid-quienessomos;
     width: 50%;
     margin: auto;
+  }
+
+  /***Estilos de Pagina de Servicios*/
+  main .serv-imagen-dos {
+    grid-area: serv-imagen-dos;
+    margin: auto;
+  }
+  main .solid-servicios {
+    grid-area: solid-servicios;
+    border-top: 2px solid #bbb;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  main .ser-h4 {
+    grid-area: ser-h4;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-top: 20px;
+  }
+
+  main .ser-p-dos {
+    grid-area: ser-p-dos;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-top: 20px;
+  }
+  main .ser-p-tres {
+    grid-area: ser-p-tres;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-top: 10px;
+  }
+  main .ser-p-cuatro {
+    grid-area: ser-p-cuatro;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-top: 10px;
+  }
+
+  main .ser-button {
+    grid-area: ser-button;
+    margin-left: 0.8em;
+  }
+  .ser-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #d0af8a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .ser-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .ser-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .ser-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .ser-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  main .serv-imagen-dos {
+    border-radius: 10px;
   }
 }
