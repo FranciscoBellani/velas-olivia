@@ -80,7 +80,7 @@ main button {
 main .imagen {
   border-radius: 10px;
 }
-
+/* Animacion button*/
 .button,
 .ser-button {
   display: inline-block;
@@ -125,7 +125,7 @@ main .imagen {
   opacity: 1;
   right: 0;
 }
-
+/* Estilos de Pagina Productos*/
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -149,38 +149,70 @@ main .imagen {
   margin-top: 10px;
   font-size: 13px;
 }
-.precio-prod{
-color: #d0af8a;
+
+.precio-prod {
+  color: #d0af8a;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: .1em;
   margin-top: 10px;
   font-size: 13px;
 }
-/* estilos de Contacto*/
+
+/* estilos de pagina Quienes Somos*/
+main .imagen1,
+main .imagen2,
+main .imagen3 {
+  margin: auto;
+  border-radius: 10px;
+}
+
+.h3i1,
+.h3i2,
+.h3i3 {
+  color: #d0af8a;
+}
+
+.p-tres,
+.p-cuatro,
+.p-cinco {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.h3-quienesomos {
+  font-size: 20px;
+}
+
+
+/* estilos de Pagina Contacto*/
 main.flex-contacto {
   display: flex;
   flex-direction: column;
   margin: 10px;
   text-align: left;
-  width: 550px;  
+  width: 550px;
 }
-main.info-contacto{
+
+main.info-contacto {
   display: flex;
   flex-direction: column;
   margin: 10px;
   text-align: left;
   left: 0;
 }
-.items-contacto{
+
+.items-contacto {
   color: #d0af8a;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    letter-spacing: .1em;
-    margin-top: 10px;   
-    margin-left: 12px;
-    font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin-top: 10px;
+  margin-left: 12px;
+  font-size: 13px;
 }
+
 /* estilos del footer*/
 footer {
   display: flex;
@@ -215,6 +247,7 @@ footer h5 {
   color: #d0af8a;
 }
 
+/* Vista adaptada para dispositivos*/
 @media screen and (min-width:510px) {
   .slider {
     display: block;
@@ -294,11 +327,13 @@ footer h5 {
 
   main .h3i1 {
     grid-area: h3i1;
-
   }
 
-  main .h3i2 {
+  main .h3i2,
+  .h3i1,
+  .h3i3 {
     grid-area: h3i2;
+    color: #d0af8a;
   }
 
   main .h3i3 {
@@ -308,16 +343,19 @@ footer h5 {
   main .imagen1 {
     grid-area: imagen1;
     margin: auto;
+    border-radius: 10px;
   }
 
   main .imagen2 {
     grid-area: imagen2;
     margin: auto;
+    border-radius: 10px;
   }
 
   main .imagen3 {
     grid-area: imagen3;
     margin: auto;
+    border-radius: 10px;
   }
 
   main .p-tres {
@@ -343,6 +381,7 @@ footer h5 {
 
   main .h3-quienesomos {
     grid-area: h3-quienesomos;
+    font-size: 20px;
   }
 
   main .solid-quienessomos {
@@ -444,7 +483,7 @@ footer h5 {
   }
 
   /***Estilos de Pagina de Productos*/
-  .flex-container {    
+  .flex-container {
     display: flex;
     flex-direction: row;
     font-size: 30px;
@@ -455,7 +494,7 @@ footer h5 {
     flex-wrap: wrap;
   }
 
-  .flex-item-1 {    
+  .flex-item-1 {
     background-color: #f2f7ec;
     padding: 10px;
     flex: 20%;
@@ -469,40 +508,46 @@ footer h5 {
     margin-top: 10px;
     font-size: 13px;
   }
-.precio-prod{
-  color: #d0af8a;
+
+  .precio-prod {
+    color: #d0af8a;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: .1em;
     margin-top: 10px;
     font-size: 13px;
-}
-/***Estilos de Pagina de Contacto*/
-.flex-contacto {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  text-align: left;
-  width: 550px;  
-}
-.info-contacto{
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  text-align: left;
-  left: 0;
-}
-.items-contacto{
-  color: #d0af8a;
+  }
+
+  /***Estilos de Pagina de Contacto*/
+  .flex-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: left;
+    width: 550px;
+  }
+
+  .info-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: left;
+    left: 0;
+  }
+
+  .items-contacto {
+    color: #d0af8a;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: .1em;
-    margin-top: 10px;   
+    margin-top: 10px;
     margin-left: 12px;
     font-size: 13px;
+  }
 }
-}
-input[type=text], select {
+
+input[type=text],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -511,7 +556,8 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-textarea{
+
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -520,9 +566,9 @@ textarea{
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 input[type=submit] {
-  width: 10%;
-  background-color: #4CAF50;
+  width: 10%;  
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -532,9 +578,10 @@ input[type=submit] {
 }
 
 .form-contacto {
-  margin-left: 5px;
+  margin: 0 5px 0 5px;
+  text-align: left;
 }
+label{
+  color: #d0af8a;
 
-input[type=submit]:hover {
-  background-color: #45a049;
 }
