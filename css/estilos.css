@@ -1,3 +1,8 @@
+main h3, main h4 {
+  color: #777674;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .03em; }
+
 * {
   margin: 0;
   padding: 0;
@@ -35,23 +40,18 @@ main {
     margin: 0 0 20px 0;
     font-family: 'Roboto', sans-serif;
     color: #d0af8a;
-    letter-spacing: .05em; }
+    letter-spacing: .03em; }
   main h3 {
     margin: 0.7em;
     padding-top: 20px;
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    letter-spacing: .03em;
-    color: #777674; }
+    letter-spacing: .03em; }
   main h4 {
-    color: #777777;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    letter-spacing: .1em;
     margin-top: 10px; }
   main p {
     padding: 1rem;
-    color: #777777;
+    color: #777674;
     font-family: 'Poppins', sans-serif; }
   main button {
     align-items: center; }

@@ -1,4 +1,7 @@
-@import "utilidades/variables.scss";
+@import "../scss/utilidades/variables";
+@import "../scss/utilidades/mixin";
+@import "../scss/utilidades/extend";
+
 // reset
 * {
     margin: 0;
@@ -17,7 +20,7 @@ header {
             margin-top: 10px;
             text-transform: uppercase;
             font-weight: bold;
-            color: $color-item-menu;
+            color: $colorprincipal;
             font-size: 17px;
         }
 
@@ -30,7 +33,7 @@ header {
 
         .navbar-nav .nav-link.active,
         .navbar-nav .show>.nav-link {
-            color: $color-item-menu;
+            color: $colorprincipal;
         }
     }
 }
@@ -50,30 +53,28 @@ main {
     h2 {
         margin: 0 0 20px 0;
         font-family: 'Roboto', sans-serif;
-        color: $colorh2;
-        letter-spacing: .05em;
+        color: $colorprincipal;
+        letter-spacing: .03em;
     }
 
     h3 {
+        @extend %estilosEncabezados;
         margin: 0.7em;
         padding-top: 20px;
-        font-family: 'Poppins', sans-serif;
         font-size: 18px;
         letter-spacing: .03em;
-        color: #777674;
+
     }
 
     h4 {
-        color: #777777;
-        font-family: 'Poppins', sans-serif;
+        @extend %estilosEncabezados;
         font-weight: bold;
-        letter-spacing: .1em;
         margin-top: 10px;
     }
 
     p {
         padding: 1rem;
-        color: #777777;
+        color: $colorparrafos;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -142,13 +143,14 @@ footer {
 
     h5 {
         font-size: 15px;
-        color: #d0af8a;
+        color: $colorprincipal;
     }
+
     .social1 {
         display: flex;
         align-items: center;
-      }
+    }
 }
+
 // Importando Media Queries
 @import "utilidades/mqueries";
-
