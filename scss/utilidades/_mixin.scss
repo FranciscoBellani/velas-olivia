@@ -1,0 +1,24 @@
+@import "../scss/utilidades/variables.scss";
+//mixing para estilos productos
+@mixin estiloproductos{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+    margin-top: 10px;
+    font-size: 13px;
+}
+//mixing para estilos botones
+@mixin estilobutton{
+    display: inline-block;
+    border-radius: 4px;
+    background-color:$color-button;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;    
+}

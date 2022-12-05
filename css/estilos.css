@@ -1,88 +1,64 @@
-/* reset */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* estilo del body*/
 body {
-  background-color: #fff;
-}
+  background-color: white; }
 
-/* estilo del header*/
-.span-logo {
+header nav .span-logo {
   margin-top: 10px;
   text-transform: uppercase;
   font-weight: bold;
   color: #d0af8a;
-  font-size: 17px;
-}
+  font-size: 17px; }
 
-.nav-item,
-li {
+header nav .nav-item,
+header nav li {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  line-height: 1.2;
-}
+  line-height: 1.2; }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .show>.nav-link {
-  color: #d0af8a;
-}
+header nav .navbar-nav .nav-link.active,
+header nav .navbar-nav .show > .nav-link {
+  color: #d0af8a; }
 
 .slider {
-  display: none;
-}
+  display: none; }
 
-/* estilo del main*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
+  text-align: center; }
+  main h2 {
+    margin: 0 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #d0af8a;
+    letter-spacing: .05em; }
+  main h3 {
+    margin: 0.7em;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: .03em;
+    color: #777674; }
+  main h4 {
+    color: #777777;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+    margin-top: 10px; }
+  main p {
+    padding: 1rem;
+    color: #777777;
+    font-family: 'Poppins', sans-serif; }
+  main button {
+    align-items: center; }
+  main .imagen {
+    border-radius: 10px; }
 
-main h2 {
-  margin: 0 0 20px 0;
-  font-family: 'Roboto', sans-serif;
-  color: #d0af8a;
-  letter-spacing: .05em;
-}
-
-main h3 {
-  margin: 0.7em;
-  padding-top: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  letter-spacing: .03em;
-  color: #777674;
-}
-
-main h4 {
-  color: #777777;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  letter-spacing: .1em;
-  margin-top: 10px;
-}
-
-main p {
-  padding: 1rem;
-  color: #777777;
-  font-family: 'Poppins', sans-serif;
-}
-
-main button {
-  align-items: center;
-}
-
-main .imagen {
-  border-radius: 10px;
-}
-/* Animacion button*/
-.button,
-.ser-button {
+.button {
   display: inline-block;
   border-radius: 4px;
   background-color: #d0af8a;
@@ -94,395 +70,193 @@ main .imagen {
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
-}
-
-.button span,
-.ser-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after,
-.ser-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span,
-.ser-button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after,
-.ser-button:hover span::after {
-  opacity: 1;
-  right: 0;
-}
-/* Estilos de Pagina Productos*/
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  text-align: center;
-  margin: 10px;
-  gap: 10px;
-}
-
-.flex-item-1 {
-  background-color: #f1f1f1;
-  padding: 10px;
-  flex: 25%;
-}
-
-.nombre-prod {
-  color: #777777;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  letter-spacing: .1em;
-  margin-top: 10px;
-  font-size: 13px;
-}
-
-.precio-prod {
-  color: #d0af8a;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  letter-spacing: .1em;
-  margin-top: 10px;
-  font-size: 13px;
-}
-
-/* estilos de pagina Quienes Somos*/
-main .imagen1,
-main .imagen2,
-main .imagen3 {
-  margin: auto;
-  border-radius: 10px;
-}
-
-.h3i1,
-.h3i2,
-.h3i3 {
-  color: #d0af8a;
-}
-
-.p-tres,
-.p-cuatro,
-.p-cinco {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-}
-
-.h3-quienesomos {
-  font-size: 20px;
-}
-
-
-/* estilos de Pagina Contacto*/
-main.flex-contacto {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  text-align: left;
-  width: 550px;
-}
-
-main.info-contacto {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  text-align: left;
-  left: 0;
-}
-
-.items-contacto {
-  color: #d0af8a;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  letter-spacing: .1em;
-  margin-top: 10px;
-  margin-left: 12px;
-  font-size: 13px;
-}
-
-/* estilos del footer*/
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 20vh;
-  padding: 0 30px 0 30px;
-}
-
-footer ul {
-  display: flex;
-  text-decoration: none;
-  list-style-type: none;
-  justify-content: left;
-}
-
-footer li {
-  list-style-type: none;
-}
-
-footer li img {
-  width: 80%;
-}
-
-.social1 {
-  display: flex;
-  align-items: center;
-}
-
-footer h5 {
-  font-size: 15px;
-  color: #d0af8a;
-}
-
-/* Vista adaptada para dispositivos*/
-@media screen and (min-width:510px) {
-  .slider {
-    display: block;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  main {
-    display: grid;
-    padding: 10px 0 0 10px;
-    grid-template-areas:
-      "h3 h3 h3"
-      "h2 h2 h2"
-      "solid solid solid"
-      "imagen h4 h4 "
-      "imagen p p"
-      "imagen p-dos p-dos"
-      "imagen button button"
-      "h3-quienesomos h3-quienesomos h3-quienesomos"
-      "solid-quienessomos solid-quienessomos solid-quienessomos"
-      "h3i1 h3i2 h3i3"
-      "imagen1 imagen2 imagen3"
-      "p-tres p-cuatro p-cinco"
-      "solid-servicios solid-servicios solid-servicios"
-      "serv-imagen-dos ser-h4 ser-h4"
-      "serv-imagen-dos ser-p-tres ser-p-tres"
-      "serv-imagen-dos ser-p-cuatro ser-p-cuatro"
-      "serv-imagen-dos ser-button ser-button"
-    ;
-  }
-
-  main h3 {
-    grid-area: h3;
-  }
-
-  main h2 {
-    grid-area: h2;
-
-  }
-
-  main h4 {
-    grid-area: h4;
-    text-align: left;
-    margin-left: 0.5em;
-    margin-top: 20px;
-  }
-
-  main .imagen {
-    grid-area: imagen;
-    margin-right: 10px;
-  }
-
-  main p {
-    grid-area: p;
-    text-align: left;
-  }
-
-  main .p-dos {
-    grid-area: p-dos;
-    text-align: left;
-  }
-
-  main .button {
-    grid-area: button;
-    margin-left: 0.8em;
-  }
-
-  main .solid {
-    grid-area: solid;
-    border-top: 2px solid #bbb;
-    width: 40%;
-    margin: auto;
-    padding-bottom: 10px;
-
-  }
-
-  main .h3i1 {
-    grid-area: h3i1;
-  }
-
-  main .h3i2,
-  .h3i1,
-  .h3i3 {
-    grid-area: h3i2;
-    color: #d0af8a;
-  }
-
-  main .h3i3 {
-    grid-area: h3i3;
-  }
-
-  main .imagen1 {
-    grid-area: imagen1;
-    margin: auto;
-    border-radius: 10px;
-  }
-
-  main .imagen2 {
-    grid-area: imagen2;
-    margin: auto;
-    border-radius: 10px;
-  }
-
-  main .imagen3 {
-    grid-area: imagen3;
-    margin: auto;
-    border-radius: 10px;
-  }
-
-  main .p-tres {
-    grid-area: p-tres;
-    width: 60%;
-    margin: auto;
-    text-align: center;
-  }
-
-  main .p-cuatro {
-    grid-area: p-cuatro;
-    width: 60%;
-    margin: auto;
-    text-align: center;
-  }
-
-  main .p-cinco {
-    grid-area: p-cinco;
-    width: 60%;
-    margin: auto;
-    text-align: center;
-  }
-
-  main .h3-quienesomos {
-    grid-area: h3-quienesomos;
-    font-size: 20px;
-  }
-
-  main .solid-quienessomos {
-    grid-area: solid-quienessomos;
-    width: 50%;
-    margin: auto;
-  }
-
-  /***Estilos de Pagina de Servicios*/
-  main .serv-imagen-dos {
-    grid-area: serv-imagen-dos;
-    margin: auto;
-  }
-
-  main .solid-servicios {
-    grid-area: solid-servicios;
-    border-top: 2px solid #bbb;
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  main .ser-h4 {
-    grid-area: ser-h4;
-    text-align: left;
-    margin-left: 0.5em;
-    margin-top: 20px;
-  }
-
-  main .ser-p-dos {
-    grid-area: ser-p-dos;
-    text-align: left;
-    margin-left: 0.5em;
-    margin-top: 20px;
-  }
-
-  main .ser-p-tres {
-    grid-area: ser-p-tres;
-    text-align: left;
-    margin-left: 0.5em;
-    margin-top: 10px;
-  }
-
-  main .ser-p-cuatro {
-    grid-area: ser-p-cuatro;
-    text-align: left;
-    margin-left: 0.5em;
-    margin-top: 10px;
-  }
-
-  main .ser-button {
-    grid-area: ser-button;
-    margin-left: 0.8em;
-  }
-
-  .ser-button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #d0af8a;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 14px;
-    padding: 10px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-
-  .ser-button span {
+  margin: 5px; }
+  .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
-  }
-
-  .ser-button span:after {
+    transition: 0.5s; }
+  .button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
-  }
-
-  .ser-button:hover span {
-    padding-right: 25px;
-  }
-
-  .ser-button:hover span:after {
+    transition: 0.5s; }
+  .button:hover span {
+    padding-right: 25px; }
+  .button:hover span:after {
     opacity: 1;
-    right: 0;
-  }
+    right: 0; }
 
-  main .serv-imagen-dos {
-    border-radius: 10px;
-  }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  padding: 0 30px 0 30px; }
+  footer ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: left; }
+    footer ul li {
+      list-style-type: none; }
+      footer ul li img {
+        width: 80%; }
+  footer h5 {
+    font-size: 15px;
+    color: #d0af8a; }
+  footer .social1 {
+    display: flex;
+    align-items: center; }
 
-  /***Estilos de Pagina de Productos*/
+/* Vista adaptada para dispositivos mayores a 510px*/
+@media screen and (min-width: 510px) {
+  .slider {
+    display: block;
+    width: 100%;
+    text-align: center;
+    overflow: hidden; }
+  /* Vista adaptada para area Main */
+  main {
+    display: grid;
+    padding: 10px 0 0 10px;
+    grid-template-areas: "h3 h3 h3" "h2 h2 h2" "solid solid solid" "imagen h4 h4 " "imagen p p" "imagen p-dos p-dos" "imagen button button" "h3-quienesomos h3-quienesomos h3-quienesomos" "solid-quienessomos solid-quienessomos solid-quienessomos" "h3i1 h3i2 h3i3" "imagen1 imagen2 imagen3" "p-tres p-cuatro p-cinco" "solid-servicios solid-servicios solid-servicios" "serv-imagen-dos ser-h4 ser-h4" "serv-imagen-dos ser-p-tres ser-p-tres" "serv-imagen-dos ser-p-cuatro ser-p-cuatro" "serv-imagen-dos ser-button ser-button"; }
+    main h3 {
+      grid-area: h3; }
+    main h2 {
+      grid-area: h2; }
+    main h4 {
+      grid-area: h4;
+      text-align: left;
+      margin-left: 0.5em;
+      margin-top: 20px; }
+    main .imagen {
+      grid-area: imagen;
+      margin-right: 10px;
+      margin-left: 1rem; }
+    main p {
+      grid-area: p;
+      text-align: left; }
+    main .p-dos {
+      grid-area: p-dos;
+      text-align: left; }
+    main .button {
+      grid-area: button;
+      margin-left: 0.8em; }
+    main .solid {
+      grid-area: solid;
+      border-top: 2px solid #bbb;
+      width: 40%;
+      margin: auto;
+      padding-bottom: 10px; }
+    main .h3i1 {
+      grid-area: h3i1;
+      color: #d0af8a; }
+    main .h3i2 {
+      grid-area: h3i2;
+      color: #d0af8a; }
+    main .h3i3 {
+      grid-area: h3i3;
+      color: #d0af8a; }
+    main .imagen1 {
+      grid-area: imagen1;
+      margin: auto;
+      border-radius: 10px; }
+    main .imagen2 {
+      grid-area: imagen2;
+      margin: auto;
+      border-radius: 10px; }
+    main .imagen3 {
+      grid-area: imagen3;
+      margin: auto;
+      border-radius: 10px; }
+    main .p-tres {
+      grid-area: p-tres;
+      width: 60%;
+      margin: auto;
+      text-align: center; }
+    main .p-cuatro {
+      grid-area: p-cuatro;
+      width: 60%;
+      margin: auto;
+      text-align: center; }
+    main .p-cinco {
+      grid-area: p-cinco;
+      width: 60%;
+      margin: auto;
+      text-align: center; }
+    main .h3-quienesomos {
+      grid-area: h3-quienesomos;
+      font-size: 20px; }
+    main .solid-quienessomos {
+      grid-area: solid-quienessomos;
+      width: 50%;
+      margin: auto; }
+    main .solid-servicios {
+      grid-area: solid-servicios;
+      border-top: 2px solid #bbb;
+      width: 60%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    main .serv-imagen-dos {
+      grid-area: serv-imagen-dos;
+      margin: auto;
+      border-radius: 10px; }
+    main .ser-h4 {
+      grid-area: ser-h4;
+      text-align: left;
+      margin-left: 0.5em;
+      margin-top: 20px; }
+    main .ser-p-dos {
+      grid-area: ser-p-dos;
+      text-align: left;
+      margin-left: 0.5em;
+      margin-top: 20px; }
+    main .ser-p-tres {
+      grid-area: ser-p-tres;
+      text-align: left;
+      margin-left: 0.5em;
+      margin-top: 10px; }
+    main .ser-p-cuatro {
+      grid-area: ser-p-cuatro;
+      text-align: left;
+      margin-left: 0.5em;
+      margin-top: 10px; }
+    main .ser-button {
+      grid-area: ser-button;
+      margin-left: 0.8em;
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #d0af8a;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px; }
+      main .ser-button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s; }
+      main .ser-button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s; }
+      main .ser-button:hover span {
+        padding-right: 25px; }
+      main .ser-button:hover span:after {
+        opacity: 1;
+        right: 0; }
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -491,50 +265,38 @@ footer h5 {
     margin: 10px;
     padding: 10px;
     gap: 1em;
-    flex-wrap: wrap;
-  }
-
+    flex-wrap: wrap; }
   .flex-item-1 {
     background-color: #f2f7ec;
     padding: 10px;
-    flex: 20%;
-  }
-
+    flex: 20%; }
   .nombre-prod {
-    color: #777777;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: .1em;
     margin-top: 10px;
     font-size: 13px;
-  }
-
+    color: #777777; }
   .precio-prod {
-    color: #d0af8a;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: .1em;
     margin-top: 10px;
     font-size: 13px;
-  }
-
+    color: #d0af8a; }
   /***Estilos de Pagina de Contacto*/
   .flex-contacto {
     display: flex;
     flex-direction: column;
     margin: 10px;
     text-align: left;
-    width: 550px;
-  }
-
+    width: 550px; }
   .info-contacto {
     display: flex;
     flex-direction: column;
     margin: 10px;
     text-align: left;
-    left: 0;
-  }
-
+    left: 0; }
   .items-contacto {
     color: #d0af8a;
     font-family: 'Poppins', sans-serif;
@@ -542,9 +304,7 @@ footer h5 {
     letter-spacing: .1em;
     margin-top: 10px;
     margin-left: 12px;
-    font-size: 13px;
-  }
-}
+    font-size: 13px; } }
 
 input[type=text],
 select {
@@ -554,8 +314,7 @@ select {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 textarea {
   width: 100%;
@@ -564,24 +323,20 @@ textarea {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 input[type=submit] {
-  width: 10%;  
+  width: 10%;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .form-contacto {
   margin: 0 5px 0 5px;
-  text-align: left;
-}
-label{
-  color: #d0af8a;
+  text-align: left; }
 
-}
+label {
+  color: #d0af8a; }
