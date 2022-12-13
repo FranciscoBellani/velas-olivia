@@ -186,17 +186,20 @@ footer {
       grid-area: p-tres;
       width: 60%;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      font-weight: 800; }
     main .p-cuatro {
       grid-area: p-cuatro;
       width: 60%;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      font-weight: 800; }
     main .p-cinco {
       grid-area: p-cinco;
       width: 60%;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      font-weight: 800; }
     main .h3-quienesomos {
       grid-area: h3-quienesomos;
       font-size: 20px;

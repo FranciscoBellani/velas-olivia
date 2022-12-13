@@ -127,23 +127,17 @@
 
     .p-tres {
       grid-area: p-tres;
-      width: 60%;
-      margin: auto;
-      text-align: center;
+      @include info-equipo;
     }
 
     .p-cuatro {
       grid-area: p-cuatro;
-      width: 60%;
-      margin: auto;
-      text-align: center;
+      @include info-equipo;
     }
 
     .p-cinco {
       grid-area: p-cinco;
-      width: 60%;
-      margin: auto;
-      text-align: center;
+      @include info-equipo;
     }
 
     .h3-quienesomos {
