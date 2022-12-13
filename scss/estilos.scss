@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: $color-fondo;
+    background:$color-fondo
 }
 
 // estilos del header
@@ -38,11 +38,14 @@ header {
     }
 }
 
-// estilos del slider
-.slider {
-    display: none;
-}
-
+// estilos del titulo slider
+.display-1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;    
+    font-size: 33px;
+    text-shadow: #FC0 1px 0 10px;
+  }
 // estilos del main
 main {
     display: flex;
@@ -59,8 +62,6 @@ main {
 
     h3 {
         @extend %estilosEncabezados;
-        margin: 0.7em;
-        padding-top: 20px;
         font-size: 18px;
         letter-spacing: .03em;
 
@@ -143,7 +144,7 @@ footer {
 
     h5 {
         font-size: 15px;
-        color: $colorprincipal;
+        color: $color-h5footer;
     }
 
     .social1 {
