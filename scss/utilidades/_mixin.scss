@@ -7,7 +7,7 @@
     margin-top: 10px;
     font-size: 13px;
 }
-//mixing para estilos botones
+//mixing para estilos btn principal
 @mixin estilobutton{
     display: inline-block;
     border-radius: 4px;
@@ -22,9 +22,33 @@
     cursor: pointer;
     margin: 5px;    
 }
+//mixing para estilos cards equipo
 @mixin info-equipo {
     width: 60%;
       margin: auto;
       text-align: center;
       font-weight:800;
+}
+//mixing para estilos contacto
+@mixin estilo-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: left;
+}
+//mixing para items informacion contacto
+@mixin items-contacto {
+    color: $colorsecundario;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+        margin-left: 12px;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        
+        margin-top: 10px;
+        margin-left: 12px;
+        font-size: 13px;
 }

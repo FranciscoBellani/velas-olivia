@@ -11,14 +11,7 @@ main h3, main h4 {
 body {
   background: linear-gradient(90deg, white 0%, rgba(198, 195, 185, 0.249737) 100%); }
 
-.display-1 {
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 33px;
-  text-shadow: #FC0 1px 0 10px; }
-
-/*** Header ***/
+/*** Estilos Carrusel Responsive***/
 #header-carousel .carousel-item {
   position: relative;
   min-height: 250px; }
@@ -28,6 +21,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.display-1 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 33px;
+  text-shadow: #FC0 1px 0 10px; }
 
 header nav .span-logo {
   margin-top: 10px;
@@ -46,9 +46,6 @@ header nav .navbar-nav .nav-link.active,
 header nav .navbar-nav .show > .nav-link {
   color: #d0af8a; }
 
-.slider {
-  display: none; }
-
 main {
   display: flex;
   flex-direction: column;
@@ -65,7 +62,13 @@ main {
     font-size: 20px;
     letter-spacing: .03em;
     font-weight: bold; }
-  main .h3i1, main .h3i2, main .h3i3 {
+  main ul {
+    list-style: circle;
+    text-align: left;
+    color: #d0af8a; }
+  main .h3i1,
+  main .h3i2,
+  main .h3i3 {
     color: #d0af8a; }
   main h4 {
     font-weight: bold;
@@ -82,10 +85,15 @@ main {
     color: #d0af8a;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    letter-spacing: .1em;
+    letter-spacing: .1rem;
     margin-top: 10px;
     margin-left: 12px;
-    font-size: 14px; }
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 13px; }
 
 .flex-container {
   display: flex;
@@ -204,7 +212,7 @@ footer {
 
 /* Vista adaptada para dispositivos mayores a 510px*/
 @media screen and (min-width: 510px) {
-  /*** Estilos Carrusel ***/
+  /*** Estilos Index Carrusel ***/
   .display-1 {
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -260,6 +268,10 @@ footer {
       grid-area: imagen;
       margin-right: 10px;
       margin-left: 1rem; }
+    main ul {
+      list-style: circle;
+      text-align: left;
+      color: #d0af8a; }
     main p {
       grid-area: p;
       text-align: left; }
@@ -427,11 +439,17 @@ footer {
     color: #d0af8a;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    letter-spacing: .1em;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     margin-top: 10px;
     margin-left: 12px;
     font-size: 13px; } }
 
+/***Estilos del Form*/
 input[type=text],
 select {
   width: 100%;
@@ -466,5 +484,3 @@ input[type=submit] {
 
 label {
   color: #d0af8a; }
-
-/*** Header ***/

@@ -13,16 +13,7 @@ body {
     background: $color-fondo
 }
 
-// // estilos del titulo carrusel
-.display-1 {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 33px;
-    text-shadow: #FC0 1px 0 10px;
-}
-
-/*** Header ***/
+/*** Estilos Carrusel Responsive***/
 
 #header-carousel .carousel-item {
     position: relative;
@@ -36,7 +27,16 @@ body {
     object-fit: cover;
 }
 
-// estilos del header
+// // estilos del titulo carrusel
+.display-1 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+// estilos del header responsive
 header {
     nav {
         .span-logo {
@@ -61,11 +61,6 @@ header {
     }
 }
 
-// estilos del slider
-.slider {
-    display: none;
-}
-
 // estilos del main
 main {
     display: flex;
@@ -87,12 +82,19 @@ main {
         font-size: 20px;
         letter-spacing: .03em;
         font-weight: bold;
-
     }
 
-    .h3i1,.h3i2,.h3i3 {
+    ul {
+        list-style: circle;
+        text-align: left;
+        color: $colorprincipal;
+    }
+
+    .h3i1,
+    .h3i2,
+    .h3i3 {
         color: $colorsecundario;
-        
+
     }
 
     h4 {
@@ -116,13 +118,7 @@ main {
     }
 
     .items-contacto {
-        color: $colorsecundario;
-        font-family: 'Poppins', sans-serif;
-        font-weight: bold;
-        letter-spacing: .1em;
-        margin-top: 10px;
-        margin-left: 12px;
-        font-size: 14px;
+       @include items-contacto;
     }
 }
 
